@@ -1,0 +1,15 @@
+<!--pages/indexStaet/indexStaet.wxml-->
+<view class="container">
+  <view class='top' style='width:600rpx;'>
+    <image class='weather-img' bindtap='toSetTime' mode='aspectFit' src="../../images/icon/naozhong.png"></image>
+    <image class='weather-img' bindtap='toSleep' mode='aspectFit' src="../../images/icon/yinyue.png"></image>
+  </view>
+  <view class='other'>
+    <view class='time'>{{hours}}:{{minutes}}</view>
+    <view class='set-time'>智能唤醒{{setTimeObj.date}}</view>
+    <view class='end' bindlongpress="endTiming">
+      <view class='end-text'>长按结束</view>
+    </view>
+    <view style="font-size:30rpx;margin:20rpx">睡眠少于5分钟不生成睡眠日志</view>
+  </view>
+</view>

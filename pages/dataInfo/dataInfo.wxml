@@ -1,0 +1,33 @@
+<!--pages/dataInfo/dataInfo.wxml-->
+<view class="container">
+  <view class='title'>{{obj.clickDate}}</view>
+  <view class='canvas'>
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+  </view>
+  <view style='width:750rpx;height:680rpx;'></view>
+  <!-- <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view> -->
+  <view class='list'>
+    <view>睡眠时长</view>
+    <view class="content" style='color:#fff;'>{{obj.total1}}分</view>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+  <view class='list'>
+    <view>体动状况</view>
+    <view class="content" style='color:#fff;'>{{obj.total3}}分</view>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+  <view class='list'>
+    <view>睡眠环境</view>
+    <view class="content" style='color:#fff;'>{{obj.total2}}分</view>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+  <view class='list'>
+    <view>睡眠建议</view>
+    <view class='set-content'>
+      <view class="content" style='color:#fff;'>{{report1}},</view>
+      <view class="content" style='color:#fff;'>{{report2}},</view>
+      <view class="content" style='color:#fff;'>可进行睡前助眠</view>
+    </view>
+  </view>
+  <!-- <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view> -->
+</view>

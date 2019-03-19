@@ -1,0 +1,29 @@
+/* pages/user/user.wxss */
+@import "/pages/setTime/setTime.wxss";
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50rpx;
+  padding-bottom: 50rpx;
+}
+
+.user-info image {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.user-info view {
+  color: #62c4d9;
+  font-size: 30rpx;
+  margin: 20rpx;
+}
+
+.title {
+  width: 560rpx;
+  display: flex;
+  align-items: flex-start;
+}

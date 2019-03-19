@@ -1,0 +1,66 @@
+/* pages/setTime/setTime.wxss */
+
+.switch-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 600rpx;
+  margin: 30rpx;
+  color: #62c4d9;
+}
+switch{
+  zoom: .7;
+}
+.picker-view {
+  width: 500rpx;
+  height: 300rpx;
+}
+
+.indicator-class {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.mask-class {
+  opacity: 0;
+}
+
+.picker-item {
+  line-height: 100rpx;
+  color: #62c4d9;
+  width: 100%;
+  text-align: center;
+}
+
+.list {
+  width: 670rpx;
+  margin: 30rpx 40rpx 30rpx 40rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: #62c4d9;
+}
+
+.content {
+  font-size: 28rpx;
+  color: #62c4d9;
+  width: 420rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.foot-text {
+  line-height: 50rpx;
+  font-size: 30rpx;
+  margin: 34rpx;
+  color: #62c4d9;
+}

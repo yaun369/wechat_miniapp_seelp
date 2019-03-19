@@ -1,0 +1,52 @@
+/* pages/banner/banner.wxss */
+.container {
+  border-radius: 30rpx;
+  background-color: #fff;
+  margin: 50rpx 40rpx 0rpx 40rpx;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50rpx;
+  font-size: 42rpx;
+  font-weight: 600;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 550rpx;
+  margin: 0 50rpx 0 50rpx;
+}
+
+.subtitle {
+  font-size: 30rpx;
+  color: #9a9a9a;
+  display: flex;
+  flex-direction: row;
+}
+
+.subtitle-sol {
+  width: 90rpx;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.subtitle-text {
+  width: 460rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+.richtext {
+  margin: 50rpx;
+}

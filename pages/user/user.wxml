@@ -1,0 +1,40 @@
+<!--pages/user/user.wxml-->
+<view class='container'>
+  <view class='user-info'>
+    <image src='{{userAva}}'></image>
+    <view>{{userNick}}</view>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+  <view class='list'>
+    <image src='../../images/icon/sb.png'></image>
+    <view>设备管理</view>
+    <view class="content">添加设备</view>
+    <image src='../../images/icon/arrow.png'></image>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+  <view class='list'>
+    <image src='../../images/icon/grxx.png'></image>
+    <view>个人信息</view>
+    <view class="content">修改</view>
+    <image src='../../images/icon/arrow.png'></image>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+  <view class='list'>
+    <image src='../../images/icon/bz.png'></image>
+    <view class='title'>帮助</view>
+    <image src='../../images/icon/arrow.png'></image>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+  <view class='list'>
+    <image src='../../images/icon/sz.png'></image>
+    <view class='title'>设置</view>
+    <image src='../../images/icon/arrow.png'></image>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+  <view class='list'>
+    <image src='../../images/icon/gy.png'></image>
+    <view class='title'>关于小程序</view>
+    <image src='../../images/icon/arrow.png'></image>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+</view>

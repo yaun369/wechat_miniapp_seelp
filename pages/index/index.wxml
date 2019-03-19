@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='top'>
+    <view class='weather'>
+      <image class='weather-img' mode='aspectFit' src="{{icon}}"></image>
+      <view class='weather-text'>{{city}}</view>
+      <view class='weather-text'>{{temperature}}°C</view>
+      <view class='weather-text'>{{skycon}}</view>
+    </view>
+    <image class='weather-img' bindtap='toSetTime' mode='aspectFit' src="../../images/icon/naozhong.png"></image>
+  </view>
+  <view class='other'>
+    <view class='time'>{{hours}}:{{minutes}}</view>
+    <view class='set-time'>智能唤醒{{setTimeObj.date}}</view>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}" wx:key="radio">
+        <view class='radio-top'>
+          <radio wx:if="{{!isStart}}" color="#62c4d9" value="{{item.value}}" checked="{{item.checked}}" />
+          <image class='radio-img' mode='aspectFit' src="{{item.icon}}"></image>
+        </view>
+        {{item.value}}
+      </label>
+    </radio-group>
+    <view class='start' wx:if="{{!isStart}}" bindtap="startTiming">
+      <view class='start-text'>开 始</view>
+      <image class='start-img' src='../../images/icon/start.png' mode="aspectFit"></image>
+    </view>
+    <view class='end' wx:if="{{isStart}}" bindlongpress="endTiming">
+      <view class='end-text'>长按结束</view>
+    </view>
+    <view wx:if="{{!isStart}}" style="font-size:30rpx;margin:20rpx">睡眠监测前请选择睡前状态再点击开始</view>
+    <view wx:if="{{isStart}}" style="font-size:30rpx;margin:20rpx">睡眠少于5分钟不生成睡眠日志</view>
+  </view>
+</view>

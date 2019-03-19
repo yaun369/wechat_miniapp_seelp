@@ -1,0 +1,34 @@
+<!--pages/setTime/setTime.wxml-->
+<view class='container'>
+  <view class='switch-view'>
+    <view>闹钟开关</view>
+    <switch bindchange="switchChange"/>
+  </view>
+  <picker-view class='picker-view' indicator-class="indicator-class" value="{{value}}" bindchange="bindChange" mask-class="mask-class">
+    <picker-view-column>
+      <view class='picker-item' wx:for="{{hours}}" wx:key="id">{{item}}时</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view class='picker-item' wx:for="{{minutes}}" wx:key="id">{{item}}分</view>
+    </picker-view-column>
+  </picker-view>
+  <view style='width:750rpx;height:150rpx;'></view>
+  <view class='list'>
+    <view>闹铃音乐</view>
+    <picker bindchange="bindPickerChange" value="{{array[index].name}}" range="{{array}}" range-key="name">
+      <view class="content">{{array[index].name}}</view>
+    </picker>
+    <image src='../../images/icon/arrow.png'></image>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+  <view class='list'>
+    <view>唤醒时间</view>
+    <picker name="gender" bindchange="bindTimeChange" value="{{arrayTime[timeIdx]}}" range="{{arrayTime}}">
+      <view class="content">{{arrayTime[timeIdx]}}</view>
+    </picker>
+    <image src='../../images/icon/arrow.png'></image>
+  </view>
+  <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+  <view style='width:750rpx;height:150rpx;'></view>
+  <view class='foot-text'>智能唤醒会慢慢播放轻音乐，在设定的时间范围内将浅睡眠的你轻轻唤醒，自然醒来。</view>
+</view>

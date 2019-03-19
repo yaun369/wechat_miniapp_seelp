@@ -1,0 +1,38 @@
+<!--pages/data/data.wxml-->
+<view class='container'>
+  <calendar calendar-style="calendar" binddayClick="dayClick" header="{{false}}" next="{{true}}" prev="{{true}}" active-type="rounded" weeks-type="full-en" cell-size="25" days-color="{{nowDate}}" board-style="board" header-style="header" />
+  <view class='container' wx:if="{{isShow}}">
+    <view class='value' bindtap='toDataInfo'>
+      <view class='title'>点击查看睡眠分数</view>
+      <view class='num'>{{total1 + total2 + total3}}</view>
+      <view class='tag'>良好</view>
+    </view>
+    <view style='width:750rpx;height:30rpx;'></view>
+    <view style='color: #62c4d9;'>睡 眠 统 计</view>
+    <view class='list'>
+      <view>睡眠时长</view>
+      <view class="content" style='color:#fff;'>{{hour}}小时{{minute}}分/{{sleepTime}}(睡)-{{wakeTime}}(醒)</view>
+    </view>
+    <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+    <view class='list'>
+      <view>睡前状态</view>
+      <view class="content" style='color:#fff;'>{{status}}</view>
+    </view>
+    <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+    <view class='list'>
+      <view>体动状态</view>
+      <view class="content" style='color:#fff;'>正常</view>
+    </view>
+    <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+    <view class='list'>
+      <view>睡眠温度</view>
+      <view class="content" style='color:#fff;'>{{temperature}}°C</view>
+    </view>
+    <view style='width: 680rpx;height: 3rpx;background:#62c4d9;'></view>
+    <view class='list'>
+      <view>睡眠湿度</view>
+      <view class="content" style='color:#fff;'>{{humidity}}%</view>
+    </view>
+    <view style='width:750rpx;height:30rpx;'></view>
+  </view>
+</view>

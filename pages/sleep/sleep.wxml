@@ -1,0 +1,59 @@
+<!--pages/sleep/sleep.wxml-->
+<view class='container'>
+  <view class='player'>
+    <image class='player-img' src='../../images/icon/player.png'></image>
+    <view class='music'>{{musicItem.name}}</view>
+    <view class='player-text'>助 眠 音 乐</view>
+    <view class='control'>
+      <image src='../../images/icon/shangyishou.png' bindtap='tapPrevious'></image>
+      <image src='../../images/icon/bofang.png' wx:if="{{!isplay}}" bindtap="play"></image>
+      <image src='../../images/icon/zanting.png' wx:if="{{isplay}}" bindtap='stop'></image>
+      <image src='../../images/icon/xiayishou.png' bindtap='tapNext'></image>
+    </view>
+  </view>
+  <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banners}}" wx:key="id">
+      <swiper-item>
+        <image bindtap="tapBanner" mode='widthFix' data-id="{{item.id}}" src="{{item.file.path}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='input-box'>
+    <view class='input-box-view'>
+      <view class='title'>实 时 参 数</view>
+      <view class='box-item'>
+        <view>温度</view>
+        <text>{{temperature}}</text>
+        <view>°C</view>
+      </view>
+      <view class='box-item'>
+        <view>湿度</view>
+        <text>{{humidity}}</text>
+        <view>%</view>
+      </view>
+      <view class='box-item'>
+        <view>光照</view>
+        <text>{{illumination}}</text>
+        <view>lux</view>
+      </view>
+    </view>
+    <view class='input-box-view'>
+      <view class='title'>室 内 设 备</view>
+      <view class='box-item'>
+        <image src='../../images/icon/kt.png'></image>
+        <view>空调</view>
+        <switch checked bindchange="switch1Change" />
+      </view>
+      <view class='box-item'>
+        <image src='../../images/icon/drt.png'></image>
+        <view>电热毯</view>
+        <switch checked bindchange="switch1Change" />
+      </view>
+      <view class='box-item'>
+        <image src='../../images/icon/csq.png'></image>
+        <view>抽湿器</view>
+        <switch checked bindchange="switch1Change" />
+      </view>
+    </view>
+  </view>
+</view>

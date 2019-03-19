@@ -1,0 +1,22 @@
+<!--start.wxml-->
+<view class="container">
+  <image class="title" src="/images/more/title8.png"></image>
+  <view class="content">
+    <view class="hd" style="transform:rotateZ({{angle}}deg);">
+      <open-data class="logo" type="userAvatarUrl"></open-data>
+      <image class="wave" src="/images/more/wave.png" mode="aspectFill"></image>
+      <image class="wave wave-bg" src="/images/more/wave.png" mode="aspectFill"></image>
+    </view>
+    <view class="bd">
+      <view style='width:750rpx;height:200rpx;'></view>
+      <view class="smalltitle">
+        欢迎你！
+        <open-data type="userNickName"></open-data>
+      </view>
+      <button class="confirm-btn" open-type="getUserInfo" bindgetuserinfo="goToIndex">
+        <text>授权进入</text>
+      </button>
+    </view>
+  </view>
+</view>
+<!-- <text class="copyright">您所授权的个人微信信息我们不会泄露，请悉知</text> -->

@@ -1,0 +1,7 @@
+<!--pages/banner/banner.wxml-->
+<view class="container">
+  <view style='position:absolute;z-index:9;background-color: #ffe558; width:7rpx;height:18rpx;margin-left:46rpx;'></view>
+  <view class='title'>{{title}}</view>
+  <rich-text nodes="{{richText}}" class='richtext'></rich-text>
+</view>
+<view style='width:750rpx;height:50rpx;'></view>
